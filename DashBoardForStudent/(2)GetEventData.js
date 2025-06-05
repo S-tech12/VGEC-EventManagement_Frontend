@@ -29,7 +29,7 @@ async function GetEvents() {
     }
 
     try {
-        const response = await fetch("http://localhost:3000/getAllEventDataForParticipate", {
+        const response = await fetch("https://vgec-eventmanagement-backend.onrender.com/getAllEventDataForParticipate", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + token
@@ -176,7 +176,7 @@ async function showDetails(event) {
 
 async function getUserData() {
     try {
-        const response = await fetch("http://localhost:3000/getUserProfile", {
+        const response = await fetch("https://vgec-eventmanagement-backend.onrender.com/getUserProfile", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + token
@@ -217,7 +217,7 @@ async function getUserData() {
 
 async function EnrollProcess(event, UserData) {
     try {
-        const response = await fetch("http://localhost:3000/ParticipateStudent", {
+        const response = await fetch("https://vgec-eventmanagement-backend.onrender.com/ParticipateStudent", {
             method: "POST",
             headers: {
                 "Authorization": "Bearer " + token,
